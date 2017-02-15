@@ -1,4 +1,4 @@
 Instertar nuevo texto para la rama "test"
 Nuevo renglon solo de test branch $git checkout test
-$git add --a //para anadir todo
 $git commit -m 'comentario' // para generar el commit
+$git add --a //para anadir todo
