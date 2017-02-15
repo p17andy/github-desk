@@ -7,3 +7,11 @@ Para unir dos ramas (branch): se situa en la rama que va absorver (master)
 $git checkout master
 y luego se une con la rama test: $git merge test  
 
+Para borrar las ramas 
+$git branch -D nombreRama
+
+Para crear ramas y moverse a la rama
+$git checkout -b nombreNuevaRama
+
+
+
