@@ -6,6 +6,7 @@ $git status
 
 Añadir cambios
 $git add --a //para anadir todo
+$git add archivo.exte //para añadir solo un archivo
 
 Hacer un commit de los cambios
 $git commit -m 'comentario'
@@ -38,6 +39,10 @@ $git remote remove origin
 
 Subir archivos del repositorio local al remoto
 $git push origin master
+
+Subir archivos a otra rama (test)
+$git push origin test
+
 
 
 
