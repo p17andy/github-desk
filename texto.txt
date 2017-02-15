@@ -1,17 +1,42 @@
-Instertar nuevo texto para la rama "test"
-Nuevo renglon solo de test branch $git checkout test
-$git commit -m 'comentario' // para generar el commit
+ver commits realizados
+$git log
+
+Ver estado de rama
+$git status
+
+Añadir cambios
 $git add --a //para anadir todo
 
-Para unir dos ramas (branch): se situa en la rama que va absorver (master) 
-$git checkout master
-y luego se une con la rama test: $git merge test  
+Hacer un commit de los cambios
+$git commit -m 'comentario'
 
-Para borrar las ramas 
+Unir dos ramas (branch): se situa en la rama que va absorver (master) 
+$git checkout master
+y luego se une con la rama test 
+$git merge test  
+
+Cambiar de rama (cambiar a rama test)
+$git checkout test
+
+Para borrar rama
 $git branch -D nombreRama
 
 Para crear ramas y moverse a la rama
 $git checkout -b nombreNuevaRama
+
+Conectarse con repositorio remoto: situarse en la carpeta y branch del proyecto
+$git remote add origin http://rutaproyecto.git
+
+Comprobar la conexión 
+$git remote -v
+
+Remover conexion 
+$git remote remove origin
+
+Subir archivos del repositorio local al remoto
+$git push origin master
+
+
 
 
 
