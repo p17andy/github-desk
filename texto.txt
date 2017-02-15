@@ -1,3 +1,6 @@
+Inicializar el proyecto en git
+$git init
+
 ver commits realizados
 $git log
 
