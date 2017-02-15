@@ -2,3 +2,8 @@ Instertar nuevo texto para la rama "test"
 Nuevo renglon solo de test branch $git checkout test
 $git commit -m 'comentario' // para generar el commit
 $git add --a //para anadir todo
+
+Para unir dos ramas (branch): se situa en la rama que va absorver (master) 
+$git checkout master
+y luego se une con la rama test: $git merge test  
+
