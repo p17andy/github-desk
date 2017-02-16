@@ -1,4 +1,85 @@
-Instertar nuevo texto para la rama "test"
-Nuevo renglon solo de test branch $git checkout test
+Inicializar el proyecto en git
+$git init
+
+___LOG___
+Ver commits realizados
+$git log
+
+Crear txt de logs (nombreFile= commits.txt)
+$git log > commits.txt
+
+___STATUS___
+Ver estado de rama
+$git status
+
+___ADD Y COMMIT___
+Añadir cambios
 $git add --a //para anadir todo
-$git commit -m 'comentario' // para generar el commit
+$git add archivo.exte //para añadir solo un archivo
+
+Hacer un commit de los cambios
+$git commit -m 'comentario'
+
+Cambiar el mensaje del commit anterior
+$git commit --amend -m "nuevo mensaje"
+
+___RESET --soft --hard___
+Borrar commits (id commit: 0055)
+$git reset --soft 0055
+
+Borra codigo y commits
+$git reset --hard 0055
+
+___Branches___
+Crear rama 
+$git branch nombreRama
+
+Borrar rama
+$git branch -D nombreRama
+
+Crear ramas y moverse a la rama
+$git checkout -b nombreNuevaRama
+
+Unir dos ramas (branch): se situa en la rama que va absorver (master) 
+$git checkout master
+y luego se une con la rama test 
+$git merge test  
+
+Cambiar de rama (cambiar a rama test)
+$git checkout test
+
+___REPOSITORIO REMOTO___
+Conectarse con repositorio remoto: situarse en la carpeta y branch del proyecto
+$git remote add origin http://rutaproyecto.git
+
+Comprobar la conexión 
+$git remote -v
+
+Remover conexion 
+$git remote remove origin
+
+Subir archivos del repositorio local al remoto
+$git push origin master
+
+Subir archivos a otra rama (test)
+$git push origin test
+
+___TAGS___
+Crear tag 
+$git tag -a NombreTag -m "mensaje del tag"
+
+Crear tag sin mensaje
+$git tag -a nombreTag
+
+Crear tag a un commit (id commit= 0655853)
+$git tag -a nombreTag -m "msn tag" 0655853
+
+Subir tag al remote
+$git push origin nombreTag
+
+Subir todos los tags
+$git push origin --tags
+
+
+
+
