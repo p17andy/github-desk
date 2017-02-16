@@ -46,6 +46,9 @@ $git push origin master
 Subir archivos a otra rama (test)
 $git push origin test
 
+Cambiar el mensaje de un commit
+$git commit -amend -m "nuevo mensaje"
+
 
 
 
