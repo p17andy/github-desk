@@ -37,16 +37,23 @@ $git branch nombreRama
 Borrar rama
 $git branch -D nombreRama
 
+Mostrar ramas ocultas
+$git branch -a
+
 Crear ramas y moverse a la rama
 $git checkout -b nombreNuevaRama
 
-Unir dos ramas (branch): se situa en la rama que va absorver (master) 
+___CHECKOUT___
+Unir dos ramas: Situarse en la rama que va absorver (master) 
 $git checkout master
 y luego se une con la rama test 
 $git merge test  
 
 Cambiar de rama (cambiar a rama test)
 $git checkout test
+
+Cambiar a un commit
+$git checkout 0055
 
 ___REPOSITORIO REMOTO___
 Conectarse con repositorio remoto: situarse en la carpeta y branch del proyecto
@@ -58,11 +65,15 @@ $git remote -v
 Remover conexion 
 $git remote remove origin
 
+___PUSH___
 Subir archivos del repositorio local al remoto
 $git push origin master
 
 Subir archivos a otra rama (test)
 $git push origin test
+
+Subir cambios en commits force
+$git push origin master -f
 
 ___TAGS___
 Crear tag 
