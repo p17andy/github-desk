@@ -37,8 +37,9 @@ $git branch nombreRama
 Borrar rama
 $git branch -D nombreRama
 
-Mostrar ramas ocultas
-$git branch -a
+Mostrar ramas
+$git branch
+$git branch -a //todas las ramas (ocultas)
 
 Crear ramas y moverse a la rama
 $git checkout -b nombreNuevaRama
@@ -64,6 +65,10 @@ $git remote -v
 
 Remover conexion 
 $git remote remove origin
+
+Bajar cambios a la rama oculta, para tener los ultimos cambios del repositorio remoto y luego juntar la rama oculta (origin/master) con la master
+$git fetch origin
+$git merge origin/master  //Unir las ramas
 
 ___PUSH___
 Subir archivos del repositorio local al remoto
