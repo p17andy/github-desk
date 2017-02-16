@@ -23,6 +23,10 @@ $git commit -m 'comentario'
 Cambiar el mensaje del commit anterior
 $git commit --amend -m "nuevo mensaje"
 
+__Ignore files__
+genera un archivo .gitignore donde se anadi los archivos que se desean ignorar
+$touch .gitignore
+
 ___RESET --soft --hard___
 Borrar commits (id commit: 0055)
 $git reset --soft 0055
